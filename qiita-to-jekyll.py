@@ -33,7 +33,7 @@ data = get_json(args.access_token)
 tag = 'Qiita'
 if args.tag :
     tag = args.tag
-note = 'この記事はQiitaに投稿されたものの転載です。\n---'
+note = 'この記事はQiitaに投稿されたものの転載です。\n\n---'
 if args.tag :
     tag = args.tag
 for item in data:
