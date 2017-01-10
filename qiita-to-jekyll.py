@@ -46,7 +46,7 @@ tags: %s
     f.close()
 
 def collect_image(item,imagedir):
-    regex = 'https:\/\/qiita-image-store\.s3\.amazonaws\.com.*?\)'
+    regex = ':\/\/qiita-image-store\.s3\.amazonaws\.com.*?[\)\"]'
     matches = re.findall(regex,item['body'])
     for match in matches:
         url = match[0:-1]
